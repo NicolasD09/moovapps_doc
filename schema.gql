@@ -1,0 +1,19 @@
+enum Category {
+  DOCUMENT,
+  LIBITEM,
+  USER,
+  WINDOWS,
+  EMAIL,
+  AUTRE
+}
+
+type Function @Collection(name: "Function") {
+  name : String!,
+  description : String!,
+  code : String!,
+  category: Category!
+}
+
+type Query {
+  allFunctions: [Function!]! @index(name: "all_functions")
+}

@@ -1,0 +1,27 @@
+button.primary,
+button.secondary {
+  border-radius: 3px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+button.primary span {
+  color: white;
+}
+
+button.primary:hover,
+button.secondary:hover {
+  transform: translateY(-1px);
+}
+
+
+button.secondary {
+  background-color: transparent;
+  color: green;
+  box-sizing: border-box;
+}
+
+
+.home__circles img {
+  width: auto;
+}

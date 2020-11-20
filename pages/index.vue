@@ -1,34 +1,20 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        moovapps_nuxt
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="flex align-top top-0 left-0 right-0 bottom-0 p-16">
+    <div class="m-auto">
+      <div class="my-4">
+        <Logo />
+      </div>
+      <div class="mt-16 flex flex-row justify-evenly">
+        <Button type="primary" to="/functions">Voir les fonctions</Button>
+        <Button type="primary" to="/functions/add">Ajouter une fonction</Button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Button from '@/components/Button/Button'
+export default {};
 </script>
 
 <style>
@@ -47,16 +33,8 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

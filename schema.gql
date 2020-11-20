@@ -17,3 +17,7 @@ type Function @Collection(name: "Function") {
 type Query {
   allFunctions: [Function!]! @index(name: "all_functions")
 }
+
+type Mutation {
+  addFunction(name: String!,description: String!, code: String!, category: Category!): Function! @resolver(name: "add_function")
+}

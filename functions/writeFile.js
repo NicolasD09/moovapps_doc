@@ -9,7 +9,7 @@ exports.handler = async event => {
     console.log(res);
 
     obj = await JSON.parse(
-      fs.readFileSync("https://ladocdeouf.netlify.app/test.json", {
+      fs.readFileSync("https://ladocdeouf.netlify.app/json/test.json", {
         encoding: "utf-8",
       })
     );
@@ -17,7 +17,7 @@ exports.handler = async event => {
     obj.push(res);
 
     await fs.writeFileSync(
-      "https://ladocdeouf.netlify.app/test.json",
+      "https://ladocdeouf.netlify.app/json/test.json",
       JSON.stringify(obj)
     );
 

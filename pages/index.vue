@@ -14,28 +14,13 @@
 
 <script>
 import Button from "@/components/Button/Button";
-import axios from 'axios';
+import axios from "axios";
 export default {
   data() {
     return {
-      jsoncontent: ""
+      jsoncontent: "",
     };
   },
-  created() {
-    // console.log("salut");
-    // fetch("/test.json")
-    //   .then(res => res.json())
-    //   .then(json => {
-    //     this.jsoncontent = json;
-    //     console.log(json);
-
-    //   })
-    //   .catch(err => console.log(err));
-    axios.get('/api/getFile')
-    .then(res => {
-      this.jsoncontent = res.data
-    })
-  }
 };
 </script>
 

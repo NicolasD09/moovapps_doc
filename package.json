@@ -19,6 +19,7 @@
     "fs": "0.0.1-security",
     "graphql-tag": "^2.11.0",
     "nuxt": "^2.14.6",
+    "nuxt-purgecss": "^1.0.0",
     "prismjs": "^1.22.0",
     "tiptap": "^1.30.0",
     "tiptap-vuetify": "^2.24.0"

@@ -19,6 +19,10 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ["assets/css/global.css"],
 
+  purgeCSS: {
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
+  },
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [{ src: "~/plugins/TiptapVuetify", mode: "client" }],
 
@@ -34,12 +38,14 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     "@nuxtjs/axios",
-    "@nuxtjs/vuetify"
+    "@nuxtjs/vuetify",
+    "nuxt-purgecss"
   ],
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    analyze: true,
     vendor: ["axios", "prismjs"],
     transpile: ["vuetify/lib", "tiptap-vuetify"]
   }

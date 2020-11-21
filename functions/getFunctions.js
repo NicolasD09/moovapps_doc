@@ -33,7 +33,7 @@ exports.handler = async event => {
     });
     
     db.close();
-    return formattedResponse(200, data);
+    return formattedResponse(200, JSON.parse(data));
 
   } catch (err) {
     console.log(err);

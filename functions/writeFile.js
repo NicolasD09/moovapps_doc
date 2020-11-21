@@ -8,13 +8,18 @@ exports.handler = async event => {
     const res = JSON.parse(event.body);
     console.log(res);
 
-    obj = await JSON.parse(fs.readFileSync("test.json", {
-      encoding: "utf-8"
-    }));
+    obj = await JSON.parse(
+      fs.readFileSync("https://ladocdeouf.netlify.app/test.json", {
+        encoding: "utf-8",
+      })
+    );
 
     obj.push(res);
 
-    await fs.writeFileSync("test.json", JSON.stringify(obj));
+    await fs.writeFileSync(
+      "https://ladocdeouf.netlify.app/test.json",
+      JSON.stringify(obj)
+    );
 
     return formattedResponse(200, obj);
 

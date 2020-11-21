@@ -17,6 +17,7 @@
     "fs": "0.0.1-security",
     "nuxt": "^2.14.6",
     "nuxt-purgecss": "^1.0.0",
+    "path": "^0.12.7",
     "prismjs": "^1.22.0",
     "sqlite3": "^5.0.0",
     "vue-quill-editor": "^3.0.6"

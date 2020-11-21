@@ -19,10 +19,10 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ["assets/css/global.css"],
 
-  // purgeCSS: {
-  //   mode: 'postcss',
-  //   enabled: (process.env.NODE_ENV === 'production')
-  // },
+  purgeCSS: {
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
+  },
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [{ src: "~/plugins/TiptapVuetify", mode: "client" }],
 

@@ -1,15 +1,16 @@
 <template>
   <div class="mt-20">
     <h1>Admin</h1>
-    <Editor v-model="info" />
-    <!-- <div v-html="info"></div> -->
-    <Button type="primary" @click="sendData" >BOUTON</Button>
+    <div data-app>
+      <Editor v-model="info" />
+    </div>
+    <Button type="primary" @click="sendData">BOUTON</Button>
   </div>
 </template>
 
 <script>
 import Editor from "~/components/editor";
-import Button from "~/components/Button/Button"
+import Button from "~/components/Button/Button";
 
 export default {
   data() {
@@ -22,7 +23,7 @@ export default {
     Button
   },
   methods: {
-    sendData(){
+    sendData() {
       console.log(this.info);
     }
   }

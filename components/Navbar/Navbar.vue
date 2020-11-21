@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-row items-center justify-between h-16 shadow-lg">
+  <nav class="flex flex-row items-center justify-between h-16 shadow-md fixed w-full bg-white">
     <nuxt-link class="xl:mx-10 lg:mx-6" to="/">
       <span class="text-xl">Accueil</span>
     </nuxt-link>
@@ -18,4 +18,4 @@
 export default {};
 </script>
 
-<style></style>
+<style src="./navbar.css"></style>

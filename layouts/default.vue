@@ -1,21 +1,30 @@
 <template>
-  <div>
-    <Navbar />
-    <Nuxt />
+  <div id="app">
+    <div class="layout grid">
+      <Navbar />
+      <Nuxt />
+    </div>
   </div>
 </template>
 <script>
-import Navbar from '~/components/Navbar/Navbar.vue'
+import Navbar from "~/components/Navbar/Navbar.vue";
+import Prism from "~/plugins/prism.js";
 export default {
-  data(){
-    return{}
+  data() {
+    return {};
   },
   components: {
     Navbar
   }
-}
+};
 </script>
 <style>
+.layout {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;

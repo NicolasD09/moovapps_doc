@@ -19,5 +19,5 @@ type Query {
 }
 
 type Mutation {
-  addFunction(name: String!,description: String!, code: String!, category: Category!): Function! @resolver(name: "add_function")
+  addFunction(): Function! @resolver(name: "add_function")
 }

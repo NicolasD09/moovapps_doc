@@ -18,4 +18,8 @@
 export default {};
 </script>
 
-<style src="./navbar.css"></style>
+<style scoped>
+nav {
+  z-index: 999;
+}
+</style>

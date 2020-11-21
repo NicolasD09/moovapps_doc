@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/vuetify": "^1.11.2",
     "axios": "^0.21.0",
     "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
@@ -18,7 +19,9 @@
     "fs": "0.0.1-security",
     "graphql-tag": "^2.11.0",
     "nuxt": "^2.14.6",
-    "prismjs": "^1.22.0"
+    "prismjs": "^1.22.0",
+    "tiptap": "^1.30.0",
+    "tiptap-vuetify": "^2.24.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0"

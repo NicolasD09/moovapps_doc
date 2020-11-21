@@ -17,11 +17,9 @@
       class="py-2 px-3 md:py-3 md:px-4 bg-green-600"
       :disabled="disabled"
     >
-      <slot>
-        <span class="text-base md:text-lg">
-          <slot></slot>
-        </span>
-      </slot>
+      <span class="text-base md:text-lg ">
+        <slot></slot>
+      </span>
     </button>
   </div>
 </template>

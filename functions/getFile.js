@@ -5,7 +5,7 @@ exports.handler = async event => {
   try {
     const json = await JSON.parse(
       fs.readFileSync(
-        "https://ladocdeouf.netlify.app/json/test.json",
+        "https://ladocdeouf.netlify.app/test.json",
         { encoding: "utf-8" }
       )
     );

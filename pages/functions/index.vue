@@ -51,7 +51,7 @@ export default {
     };
   },
   mounted() {
-    axios.get("/api/getFile").then(res => {
+    axios.get("/.netlify/functions/getFile").then(res => {
       this.jsoncontent = res.data;
     });
     Prism.highlightAll();

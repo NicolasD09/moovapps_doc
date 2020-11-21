@@ -2,8 +2,12 @@
   <div class="mt-20">
     <h1>Admin</h1>
     <div data-app>
-      <Editor v-model="info" />
+      <Editor  />
     </div>
+    <form @submit.prevent >
+      <textarea name="" id="" cols="30" rows="10" v-model="info"></textarea>
+      <input type="submit" value="SEND" @click="sendData">
+    </form>
     <Button type="primary" @click="sendData">BOUTON</Button>
   </div>
 </template>

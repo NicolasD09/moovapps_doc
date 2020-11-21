@@ -10,7 +10,7 @@
         <div
           v-for="(data, index) in this.jsoncontent"
           :key="index"
-          class="prism p-4 my-6 rounded-xl bg-gray-100 shadow-lg"
+          class="prism p-4 my-6 rounded-xl shadow-lg"
         >
           <div class="flex flex-row justify-between">
             <h2>

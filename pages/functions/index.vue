@@ -51,7 +51,7 @@ export default {
     };
   },
   mounted() {
-    axios.get("https://ladocdeouf.app/.netlify/functions/getFile").then(res => {
+    axios.get("https://ladocdeouf.app/.netlify/functions/getFunctions").then(res => {
       this.jsoncontent = res.data;
     });
     Prism.highlightAll();

@@ -3,7 +3,7 @@ const formattedResponse = require("./utils/formattedResponse");
 
 exports.handler = async event => {
   try {
-    let data;
+    let res;
     let db = new sq.Database(dbname, (err) => {
       if (err) throw err;
 
@@ -29,11 +29,11 @@ exports.handler = async event => {
     db.all('SELECT * FROM function', (err, data) => {
       if (err) console.log(err);
       console.log(data);
-      data = data;
+      res = data;
     });
     
     db.close();
-    return formattedResponse(200, JSON.parse(data));
+    return formattedResponse(200, res);
 
   } catch (err) {
     console.log(err);

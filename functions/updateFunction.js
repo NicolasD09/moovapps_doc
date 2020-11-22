@@ -1,4 +1,4 @@
-const { dbname, sq } = require("./sqlite");
+const { dbname, sq } = require("./firebase");
 const formattedResponse = require("./utils/formattedResponse");
 
 exports.handler = async (event) => {

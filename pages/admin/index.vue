@@ -6,7 +6,7 @@
       <input
         type="text"
         name=""
-        id=""
+        id="title"
         class="border-2 border-gray-300 rounded-md my-4"
         v-model="titre"
       />
@@ -14,7 +14,7 @@
       <input
         type="text"
         name=""
-        id=""
+        id="description"
         class="border-2 border-gray-300 rounded-md my-4"
         v-model="description"
       />
@@ -22,14 +22,14 @@
       <input
         type="text"
         name=""
-        id=""
+        id="category"
         class="border-2 border-gray-300 rounded-md my-4"
         v-model="categorie"
       />
       <label for="">Code</label>
       <textarea
         name=""
-        id=""
+        id="code"
         class="border-2 border-gray-300 rounded-md my-4"
         v-model="code"
       >

@@ -8,6 +8,7 @@ exports.handler = async event => {
     let ref = firebase.database().ref('test/'+'2');
     ref.on('value', snapshot => {
       console.log(snapshot.val());
+      res = snapshot.val();
     })
     //ref.push();
     // ref.set({
@@ -15,7 +16,7 @@ exports.handler = async event => {
     // })
     console.log(ref);
     
-    return formattedResponse(200, ref);
+    return formattedResponse(200, res);
 
   } catch (err) {
     console.log(err);

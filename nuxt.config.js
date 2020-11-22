@@ -19,9 +19,6 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     "assets/css/global.css",
-    "quill/dist/quill.snow.css",
-    "quill/dist/quill.bubble.css",
-    "quill/dist/quill.core.css",
   ],
 
   purgeCSS: {

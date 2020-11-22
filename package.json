@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@firebase/util": "^0.3.4",
     "@nuxtjs/axios": "^5.12.2",
     "axios": "^0.21.0",
     "clipboard": "^2.0.6",

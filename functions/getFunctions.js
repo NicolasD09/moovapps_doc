@@ -1,20 +1,14 @@
-const { firebase } = require("./firebase");
+const { db } = require("./firebase");
 const formattedResponse = require("./utils/formattedResponse");
 
 exports.handler = async event => {
   try {
-    let res;
-    
-    let ref = firebase.database().ref('test/'+'2');
-    ref.on('value', snapshot => {
-      console.log(snapshot.val());
-      res = snapshot.val();
+    db.connect(err => {
+      if (err) console.log(err);
+      console.log('connecté a la base');
     })
-    //ref.push();
-    // ref.set({
-    //   theName: 'testname22'
-    // })
-    console.log(ref);
+
+
     
     return formattedResponse(200, res);
 
